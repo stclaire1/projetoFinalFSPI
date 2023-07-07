@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Busque conhecimento:</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/binario.html">Binário</a></li>
+                <li><a href="/decimal.html">Decimal</a></li>
+                <li><a href="/hexadecimal.html">Hexadecimal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Sistema Decimal</h1>
+            <p>O sistema decimal é o mais utilizado no dia a dia. Nele utilizamos dez dígitos diferentes (0 a 9) para representar valores. A posição de cada dígito em um número decimal indica o seu valor relativo. Por exemplo, o número 257 tem o 2 na posição das centenas, o 5 na posição das dezenas e o 7 na posição das unidades.</p>
+            <p>A conversão de números decimais para as bases binárias e hexadecimais segue a mesma lógica utilizada na conversão de números de outros sistemas numéricos para o sistema decimal. Por exemplo, ao converter números binários para decimais, é necessário multiplicar cada dígito binário pela potência de 2 correspondente à sua posição e somar os resultados. De forma similar, na conversão de um número hexadecimal para decimal, multiplica-se cada dígito hexadecimal pelo valor correspondente e soma-se os resultados obtidos.</p>
+            <h3 class="first-section">Converter Decimal para Binário e Hexadecimal</h3>
+            <form class="second-section">
+                <label for="decimal">Decimal:</label>
+                <input type="number" id="decimal" oninput="convertDecimal()" placeholder="Digite um número decimal">
+                <br>
+                <label for="binary">Binário:</label>
+                <input type="text" id="binary" readonly>
+                <br>
+                <button class="copy-button" type="button" onclick="copyToClipboard('binary')">Copiar</button>
+                <br>
+                <label for="hexadecimal">Hexadecimal:</label>
+                <input type="text" id="hexadecimal" readonly>
+                <br>
+                <button class="copy-button" type="button" onclick="copyToClipboard('hexadecimal')">Copiar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Conversões entre Sistemas</h2>
+            <h3>Decimal para Binário</h3>
+            <p>Divida o número decimal por 2 sucessivamente até chegar a 0, registrando o resto de cada divisão. O número binário é formado pelos restos, lidos em ordem reversa, do último para o primeiro.</p>
+            <p>Exemplo: Converter o número decimal 45 para binário.</p>
+            <p>Passo 1: Dividir o número por 2 sucessivamente até chegar a 0.</p>
+            <p>45 ÷ 2 = 22, resto 0</p>
+            <p>22 ÷ 2 = 11, resto 1</p>
+            <p>11 ÷ 2 = 5, resto 0</p>
+            <p>5 ÷ 2 = 2, resto 1</p>
+            <p>2 ÷ 2 = 1, resto 0</p>
+            <p>1 ÷ 2 = 0, resto 1</p>
+            <p>Passo 2: Registrar os restos em ordem reversa. Os restos são 101010, lidos de trás para frente.</p>
+            <p>Portanto, o número decimal 45 é igual a 101101 em binário.</p>
+            <h3>Decimal para Hexadecimal</h3>
+            <p>Para a conversão de decimal para hexadecimal, dividimos o número decimal por 16 sucessivamente até chegar a 0, registrando o resto de cada divisão. Os restos de 10 a 15 são representados pelas letras A, B, C, D, E e F, respectivamente. Os demais restos são representados pelos próprios números.</p>
+            <p>Exemplo: Converter o número decimal 438 para hexadecimal.</p>
+            <p>Passo 1: Dividir o número por 16 sucessivamente até chegar a 0.</p>
+            <p>Passo 2: Registrar os restos em ordem reversa. Note que o resto da segunda divisão foi o número 11, que corresponde ao número B em Hexadecimal.
+            .Portanto, o número decimal 438 é igual a 1B6 em hexadecimal.</p>
+        </section>
+    </main>
+    <footer>Desenvolvido por Ana Clara Custodio</footer>
+</body>
+</html>
