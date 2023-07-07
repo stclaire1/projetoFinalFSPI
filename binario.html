@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Busque conhecimento:</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/binario.html">Binário</a></li>
+                <li><a href="/decimal.html">Decimal</a></li>
+                <li><a href="/hexadecimal.html">Hexadecimal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Sistema Binário</h1>
+            <p>O sistema binário é um sistema de numeração com base 2, que utiliza apenas os dígitos 0 e 1. A base 2 indica que cada posição em um número binário representa uma potência de 2.</p>
+            <p>O sistema binário é amplamente empregado em sistemas digitais e computadores devido à sua relação com circuitos eletrônicos, onde o estado ligado é representado pelo 1 e o estado desligado pelo 0. Essa codificação utilizando o sistema binário é fundamental nesses dispositivos.</p>
+            <p>A conversão entre números binários e outros sistemas numéricos envolve o uso de potências de 2. Ao converter números binários em decimais, é necessário multiplicar cada dígito binário pela potência de 2 correspondente à sua posição e somar os resultados. Por outro lado, ao converter um número decimal em binário, é necessário realizar divisões sucessivas por 2 e utilizar os restos dessas divisões para formar o número binário.</p>
+        </section>
+        <section>
+            <h2>Conversões entre Sistemas</h2>
+            <h3>Binário para Decimal</h3>
+            <p><b>Passo 1 : </b>Inicie atribuindo as posições aos dígitos binários, começando da direita para a esquerda:</p>
+            <p>Posição: 6 5 4 3 2 1 0</p>
+            <p>Binário: 1 1 0 1 1 0 1</p>
+            <p><b>Passo 2 : </b>Agora, vamos calcular o valor decimal de cada posição. Para cada dígito binário, multiplicamos por 2 elevado à sua posição e somamos os resultados:</p>
+            <p> Sendo assim, decimal = 1 * 2^6 + 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0</p>
+            <p>= 64 + 32 + 0 + 8 + 4 + 0 + 1 = 109</p>
+            <p>Portanto, o número binário 1101101 é igual a 109 em decimal.</p>
+            <p>Confira mais um exmplo a seguir, com a a conversão do número 1011  para decimal: </p>
+            <h3>Binário para Hexadecimal</h3>
+            <p>Divida o número binário em grupos de 4 dígitos, começando da direita para a esquerda. Se a quantidade de dígitos do número binário não for múltipla de 4, adicione zeros à esquerda para formar grupos completos de 4 dígitos.
+            <p>Atribua a cada grupo de 4 dígitos um dígito hexadecimal correspondente. Escreva o número hexadecimal resultante, combinando os dígitos hexadecimais atribuídos a cada grupo. Abaixo está um exemplo passo a passo:</p>     
+            <p>Exemplo: Converter o binário 1101101 para hexadecimal.</p>
+            <p><b>Passo 1 : </b>Divida o número binário em grupos de 4 dígitos:</p>
+            <p>Binário: 1 1 0 1 1 0 1</p>
+            <p>Agrupamento: 1101 101</p>
+            <p>Atribua um dígito hexadecimal a cada grupo de 4 dígitos:</p>
+            <p>Para o grupo 1101, atribuímos o dígito hexadecimal D.</p>
+            <p>Para o grupo 101, atribuímos o dígito hexadecimal 5.</p>
+            <p>Escreva o número hexadecimal resultante. Combinando os dígitos hexadecimais atribuídos a cada grupo, temos: 5D.</p>   
+            <p>Portanto, o número binário 1101101 é igual a 5D em hexadecimal.</p>
+        </section>
+    </main>
+    <footer>Desenvolvido por Ana Clara Custodio</footer>
+</body>
+</html>
