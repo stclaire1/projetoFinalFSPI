@@ -1,0 +1,24 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+main h1, h2, h3{
+    color: rgb(77, 37, 37);
+    margin: 30px 0px;
+}
+
+h3{
+    color: rgb(36, 110, 36);
+}
+
+p{
+    line-height: 2em;
+    width: 1000px;
+    margin: auto;
+    text-align: justify;
+}
+
+section{
+    margin-bottom: 50px;
+}
