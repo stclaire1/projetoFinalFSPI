@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="decimal.css">
     <script src="script/converter.js"></script>
     <title>Decimal</title>
 </head>
@@ -28,15 +29,11 @@
             <form class="second-section">
                 <label for="decimal">Decimal:</label>
                 <input type="number" id="decimal" oninput="convertDecimal()" placeholder="Digite um número decimal">
-                <br>
                 <label for="binary">Binário:</label>
                 <input type="text" id="binary" readonly>
-                <br>
                 <button class="copy-button" type="button" onclick="copyToClipboard('binary')">Copiar</button>
-                <br>
                 <label for="hexadecimal">Hexadecimal:</label>
                 <input type="text" id="hexadecimal" readonly>
-                <br>
                 <button class="copy-button" type="button" onclick="copyToClipboard('hexadecimal')">Copiar</button>
             </form>
         </section>
@@ -62,6 +59,5 @@
             .Portanto, o número decimal 438 é igual a 1B6 em hexadecimal.</p>
         </section>
     </main>
-    <footer>Desenvolvido por Ana Clara Custodio</footer>
 </body>
 </html>
