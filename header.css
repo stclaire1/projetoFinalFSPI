@@ -24,6 +24,7 @@ header ul{
     justify-content: center;
 
     list-style-type: none;
+    background-color: rgb(252, 239, 225);
 }
 
 header ul li{
