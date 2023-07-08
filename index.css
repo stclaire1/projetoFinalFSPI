@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+}
+
+.first-section, .second-section{
+    text-align: center;
+}
+
+.first-section h1{
+    color: rgb(77, 37, 37);
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.first-section p{
+    width: 850px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.second-section h2{
+    color: rgb(77, 37, 37);
+    margin-bottom: 40px;
+}
+
+form label{
+    padding-right: 3px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(77, 37, 37);
+}
+
+form input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    background-color: rgb(78, 156, 78);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 70px;
+    border: none;
+    margin-left: 5px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(36, 110, 36);
+}
